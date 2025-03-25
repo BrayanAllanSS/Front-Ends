@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    font-size: 62.5%;
+}
+
+main{
+    height: 100vh;
+    width: 100vw;
+    background-image: url(../img/background.png);
+    background-size: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main section{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+main section .form-container{
+    background-color: white;
+    border: solid 0.3rem #000000;
+    border-right: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+main section .form-container .logo{
+    margin-top:3.52rem;
+    margin-bottom: 3.97rem;
+}
+
+main section .form-container form{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    width: 31.5rem;
+    margin-bottom: 3rem;
+}
+
+main section .form-container form h1{
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+main section .form-container form input{
+    height: 3.6rem;
+    padding: 1.08rem 1.35rem;
+    border: solid 0.225rem black;
+    font-size: 1.2rem;
+    border-radius: 0.375rem;
+}
+
+main section .form-container .born-date {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3.15rem;
+}
+
+main section .form-container label{
+    font-size: 0.9rem;
+}
+
+main section .form-container select{
+    padding: 0.8rem;
+    border: solid 0.225rem black;
+    border-radius: 0.375rem;
+    height: 3.6rem;
+}
+
+main section .form-container .born-date .born-day, .born-year{
+    width: 6.075rem;
+}
+
+main section .form-container .born-date .born-month{
+    width: 13.275rem;
+}
+
+
+main section .form-container form input .input-date{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    align-self: stretch;
+}
+
+main section .form-container form .form-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main section .form-container form .form-footer a{
+    color: #000000;
+    text-decoration: underline;
+    font-size: 1.2rem;
+}
+
+main section .form-container form .form-footer strong{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+main section .form-container form .form-footer button{
+    background-color: #000000;
+    color: white;
+    padding: 0.6rem 3.375rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+main section .form-container .form-separator{
+    display: flex;
+    gap:0.6rem;
+    align-items: center;
+    justify-content: center;
+    width: 31.5rem;
+}
+
+main section .form-container .form-separator hr{
+    border-top: solid 0.1rem #acacac;
+    flex: 1;
+}
+
+main section .form-container .form-separator span{
+    color: #acacac;
+    font-size: 1.2rem;
+}
+
+main section .form-container .form-social-login{
+    margin-top: 2.7rem;
+    display: flex;
+    justify-content: center;
+    width: 26.3rem;
+    gap: 1.22rem;
+}
+
+main section .form-container .form-social-login div{
+    border: solid 0.1rem #acacac;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.375rem;
+    width: 11rem;
+    height: 11rem;
+}
+
+
+main section .image-container{
+    width: 100vw;
+    max-width: 42.15rem;
+    height: auto;
+}
+
+main section .image-container img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
