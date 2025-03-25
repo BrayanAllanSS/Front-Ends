@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./static/css/style.css" />
+    <title>Cadastro</title>
+  </head>
+  <body>
+    <main>
+      <section>
+        <div class="form-container">
+          <img src="static/img/logo.png" alt="" class="logo" />
+          <form>
+            <h1>Criar sua conta</h1>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Nome completo"
+            />
+            <input
+              type="text"
+              id="login"
+              name="login"
+              placeholder="Nome de usuário"
+            />
+            <input
+              type="text"
+              id="contact"
+              name="contact"
+              placeholder="Celular ou e-mail"
+            />
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Senha"
+            />
+            <input
+              type="password"
+              id="passwordConfirm"
+              name="passwordConfirm"
+              placeholder="Confirme sua senha"
+            />
+            <label for="dia">Data de nascimento</label>
+            <div class="born-date">
+              <select id="day" name="day" required class="born-day">
+                <option value="" disabled selected>dia</option>
+                <script>
+                  for (let i = 1; i <= 31; i++) {
+                    document.write(`<option value="${i}">${i}</option>`);
+                  }
+                </script>
+              </select>
+
+              <select id="month" name="month" required class="born-month">
+                <option value="" disabled selected>mês</option>
+                <option value="1">Janeiro</option>
+                <option value="2">Fevereiro</option>
+                <option value="3">Março</option>
+                <option value="4">Abril</option>
+                <option value="5">Maio</option>
+                <option value="6">Junho</option>
+                <option value="7">Julho</option>
+                <option value="8">Agosto</option>
+                <option value="9">Setembro</option>
+                <option value="10">Outubro</option>
+                <option value="11">Novembro</option>
+                <option value="12">Dezembro</option>
+              </select>
+
+              <select id="year" name="year" class="born-year" required>
+                <option value="" disabled selected>ano</option>
+                <script>
+                  let currentYear = new Date().getFullYear();
+                  for (let i = currentYear; i >= 1900; i--) {
+                    document.write(`<option value="${i}">${i}</option>`);
+                  }
+                </script>
+              </select>
+            </div>
+            <div class="form-footer">
+              <a href="login.html"
+                >Já possui uma conta? <strong>Entrar</strong></a
+              >
+              <button>Cadastre-se</button>
+            </div>
+          </form>
+        </div>
+        <div class="image-container">
+          <img
+            src="./static/img/register_banner.png"
+            alt="Banner de uma mulher sentada em uma escada rolante"
+          />
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
