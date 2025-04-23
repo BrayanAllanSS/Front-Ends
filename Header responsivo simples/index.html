@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="static/css/style.css" />
+    <script defer src="static/js/script.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="menu">
+        <img
+          id="dropdown-toggle"
+          src="static/img/menu.png"
+          alt="Menu"
+          srcset=""
+          aria-haspopup="menu"
+          aria-expanded="false"
+          aria-controls="dropdown-container"
+        />
+        <img src="static/img/hamburguer-logo.png" alt="Logo de um hambúrguer" />
+        <h1>Hamburger.com</h1>
+      </div>
+      <nav class="header-nav" role="menu">
+        <ul>
+          <li role="menu-item">
+            <a href="#">
+              <iconify-icon
+                icon="material-symbols:home-outline-rounded"
+                class="icon"
+              ></iconify-icon>
+              Ínicio
+            </a>
+          </li>
+          <li role="menu-item">
+            <a href="#">
+              <iconify-icon
+                icon="hugeicons:menu-restaurant"
+                class="icon"
+              ></iconify-icon>
+              Cardápio
+            </a>
+          </li>
+          <li role="menu-item">
+            <a href="#">
+              <iconify-icon
+                icon="mdi:alert-decagram"
+                class="icon"
+              ></iconify-icon>
+              Lançamentos
+            </a>
+          </li>
+          <li role="menu-item">
+            <a href="#">
+              <iconify-icon
+                icon="tabler:truck-delivery"
+                class="icon"
+              ></iconify-icon>
+              Delivery
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <button>Entrar</button>
+      <nav id="dropdown-container" class="dropdown hidden" role="menu">
+        <ul>
+          <li role="menu-item">
+            <a href="#">
+              <iconify-icon
+                icon="material-symbols:home-outline-rounded"
+                class="icon"
+              ></iconify-icon>
+              Ínicio
+            </a>
+          </li>
+          <li role="menu-item">
+            <a href="#">
+              <iconify-icon
+                icon="hugeicons:menu-restaurant"
+                class="icon"
+              ></iconify-icon>
+              Cardápio
+            </a>
+          </li>
+          <li role="menu-item">
+            <a href="#">
+              <iconify-icon
+                icon="mdi:alert-decagram"
+                class="icon"
+              ></iconify-icon>
+              Lançamentos
+            </a>
+          </li>
+          <li role="menu-item">
+            <a href="#">
+              <iconify-icon
+                icon="tabler:truck-delivery"
+                class="icon"
+              ></iconify-icon>
+              Delivery
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+  </body>
+</html>
